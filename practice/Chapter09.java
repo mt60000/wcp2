@@ -11,4 +11,4 @@ public class Chapter09 {
 		car.move(20);
 		System.out.println("残量は、" + car.getFuelAmount() + "です");
 	}
-}a
+}
