@@ -27,7 +27,8 @@ public class Chapter15_2 {
 					// 文字数が5以外の時はスキップ
 					continue;
 				}
-				///bufferedWriterのwriteおｗ使用
+				//bufferedWriterのwriteを使用
+				//output.txtに書き込まれる
 				bw.write(line);
 				//改行
 				bw.newLine();

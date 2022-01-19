@@ -7,12 +7,20 @@ public class Chapter15_1 {
 		System.out.println(a + " と " + b + " の最大公約数は、" + gcd(a, b) + "です。");
 	}
 	
+//	static int gcd(int a, int b) {
+//		int c;
+//		while ((c = a % b) != 0) {
+//			a = b;
+//			b = c;
+//		}
+//		return b;
+//	}
+	
+	// 再帰メソッドを使用した正解
 	static int gcd(int a, int b) {
-		int c;
-		while ((c = a % b) != 0) {
-			a = b;
-			b = c;
+		if (b == 0) {
+			return a;
 		}
-		return b;
+		return gcd(b, a % b);
 	}
 }
